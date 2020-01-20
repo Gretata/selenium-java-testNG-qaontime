@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\Greta\eclipse-workspace\MavenProject\testingRegression.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>2 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">16 methods, 1 failed,   15 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.AddIssueTest" class="method navigator-link" hash-for-method="Should_BeAbleToAddIssue_When_ProvidingCorrectData">Should_BeAbleToAddIssue_When_ProvidingCorrectData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="Should_BeAbleToLogin_When_UserNameAndPasswordAreValid">Should_BeAbleToLogin_When_UserNameAndPasswordAreValid</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.AddIssueTest" class="method navigator-link" hash-for-method="Should_NotBeAbleToAddIssue_When_AssignedToInvalid">Should_NotBeAbleToAddIssue_When_AssignedToInvalid</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.AddIssueTest" class="method navigator-link" hash-for-method="Should_NotBeAbleToAddIssue_When_IssueNameIsEmptyString">Should_NotBeAbleToAddIssue_When_IssueNameIsEmptyString</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.AddIssueTest" class="method navigator-link" hash-for-method="Should_NotBeAbleToAddIssue_When_IssueNameIsMissing">Should_NotBeAbleToAddIssue_When_IssueNameIsMissing</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.AddIssueTest" class="method navigator-link" hash-for-method="Should_NotBeAbleToAddIssue_When_ReasonInvalid">Should_NotBeAbleToAddIssue_When_ReasonInvalid</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.AddIssueTest" class="method navigator-link" hash-for-method="Should_NotBeAbleToAddIssue_When_SeverityLevelIsTooHigh">Should_NotBeAbleToAddIssue_When_SeverityLevelIsTooHigh</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.AddIssueTest" class="method navigator-link" hash-for-method="Should_NotBeAbleToAddIssue_When_StatusInvalid">Should_NotBeAbleToAddIssue_When_StatusInvalid</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="Should_NotBeAbleToLogin_When_PasswordContainsNewLineCharacters">Should_NotBeAbleToLogin_When_PasswordContainsNewLineCharacters</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="Should_NotBeAbleToLogin_When_PasswordContainsSQL">Should_NotBeAbleToLogin_When_PasswordContainsSQL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="Should_NotBeAbleToLogin_When_PasswordContainsScript">Should_NotBeAbleToLogin_When_PasswordContainsScript</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="Should_NotBeAbleToLogin_When_PasswordContainsSymbols">Should_NotBeAbleToLogin_When_PasswordContainsSymbols</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="Should_NotBeAbleToLogin_When_PasswordIsCrossSiteScripted">Should_NotBeAbleToLogin_When_PasswordIsCrossSiteScripted</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="Should_NotBeAbleToLogin_When_PasswordIsEmptyStrings">Should_NotBeAbleToLogin_When_PasswordIsEmptyStrings</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="Should_NotBeAbleToLogin_When_PasswordIsInvalid">Should_NotBeAbleToLogin_When_PasswordIsInvalid</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="Should_NotBeAbleToLogin_When_UserNameIsInvalid">Should_NotBeAbleToLogin_When_UserNameIsInvalid</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.AddIssueTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Should_BeAbleToAddIssue_When_ProvidingCorrectData">
+                  </a> <!-- Should_BeAbleToAddIssue_When_ProvidingCorrectData -->
+                  <span class="method-name">Should_BeAbleToAddIssue_When_ProvidingCorrectData</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;body&quot;]/table/tbody/tr[2]/td/div/div[2]/table/tbody/tr[2]/td/div[2]&quot;}
+  (Session info: chrome=79.0.3945.117)
+  (Driver info: chromedriver=79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;Gretos-Asus&apos;, ip: &apos;192.168.237.174&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:62180}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}), userDataDir=C:\Users\Greta\AppData\Local\Temp\scoped_dir12160_1930910790}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=79.0.3945.117, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 9927d41b4b76b05565e5ae7f5ee3c6c6
+*** Element info: {Using=xpath, value=//*[@id=&quot;body&quot;]/table/tbody/tr[2]/td/div/div[2]/table/tbody/tr[2]/td/div[2]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy10.getText(Unknown Source)
+	at tests.AddIssueTest.Should_BeAbleToAddIssue_When_ProvidingCorrectData(AddIssueTest.java:30)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Should_BeAbleToLogin_When_UserNameAndPasswordAreValid">
+                  </a> <!-- Should_BeAbleToLogin_When_UserNameAndPasswordAreValid -->
+                  <span class="method-name">Should_BeAbleToLogin_When_UserNameAndPasswordAreValid</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Should_NotBeAbleToLogin_When_PasswordContainsNewLineCharacters">
+                  </a> <!-- Should_NotBeAbleToLogin_When_PasswordContainsNewLineCharacters -->
+                  <span class="method-name">Should_NotBeAbleToLogin_When_PasswordContainsNewLineCharacters</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Should_NotBeAbleToLogin_When_PasswordContainsSQL">
+                  </a> <!-- Should_NotBeAbleToLogin_When_PasswordContainsSQL -->
+                  <span class="method-name">Should_NotBeAbleToLogin_When_PasswordContainsSQL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Should_NotBeAbleToLogin_When_PasswordContainsScript">
+                  </a> <!-- Should_NotBeAbleToLogin_When_PasswordContainsScript -->
+                  <span class="method-name">Should_NotBeAbleToLogin_When_PasswordContainsScript</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Should_NotBeAbleToLogin_When_PasswordContainsSymbols">
+                  </a> <!-- Should_NotBeAbleToLogin_When_PasswordContainsSymbols -->
+                  <span class="method-name">Should_NotBeAbleToLogin_When_PasswordContainsSymbols</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Should_NotBeAbleToLogin_When_PasswordIsCrossSiteScripted">
+                  </a> <!-- Should_NotBeAbleToLogin_When_PasswordIsCrossSiteScripted -->
+                  <span class="method-name">Should_NotBeAbleToLogin_When_PasswordIsCrossSiteScripted</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Should_NotBeAbleToLogin_When_PasswordIsEmptyStrings">
+                  </a> <!-- Should_NotBeAbleToLogin_When_PasswordIsEmptyStrings -->
+                  <span class="method-name">Should_NotBeAbleToLogin_When_PasswordIsEmptyStrings</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Should_NotBeAbleToLogin_When_PasswordIsInvalid">
+                  </a> <!-- Should_NotBeAbleToLogin_When_PasswordIsInvalid -->
+                  <span class="method-name">Should_NotBeAbleToLogin_When_PasswordIsInvalid</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Should_NotBeAbleToLogin_When_UserNameIsInvalid">
+                  </a> <!-- Should_NotBeAbleToLogin_When_UserNameIsInvalid -->
+                  <span class="method-name">Should_NotBeAbleToLogin_When_UserNameIsInvalid</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.AddIssueTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Should_NotBeAbleToAddIssue_When_AssignedToInvalid">
+                  </a> <!-- Should_NotBeAbleToAddIssue_When_AssignedToInvalid -->
+                  <span class="method-name">Should_NotBeAbleToAddIssue_When_AssignedToInvalid</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Should_NotBeAbleToAddIssue_When_IssueNameIsEmptyString">
+                  </a> <!-- Should_NotBeAbleToAddIssue_When_IssueNameIsEmptyString -->
+                  <span class="method-name">Should_NotBeAbleToAddIssue_When_IssueNameIsEmptyString</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Should_NotBeAbleToAddIssue_When_IssueNameIsMissing">
+                  </a> <!-- Should_NotBeAbleToAddIssue_When_IssueNameIsMissing -->
+                  <span class="method-name">Should_NotBeAbleToAddIssue_When_IssueNameIsMissing</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Should_NotBeAbleToAddIssue_When_ReasonInvalid">
+                  </a> <!-- Should_NotBeAbleToAddIssue_When_ReasonInvalid -->
+                  <span class="method-name">Should_NotBeAbleToAddIssue_When_ReasonInvalid</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Should_NotBeAbleToAddIssue_When_SeverityLevelIsTooHigh">
+                  </a> <!-- Should_NotBeAbleToAddIssue_When_SeverityLevelIsTooHigh -->
+                  <span class="method-name">Should_NotBeAbleToAddIssue_When_SeverityLevelIsTooHigh</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Should_NotBeAbleToAddIssue_When_StatusInvalid">
+                  </a> <!-- Should_NotBeAbleToAddIssue_When_StatusInvalid -->
+                  <span class="method-name">Should_NotBeAbleToAddIssue_When_StatusInvalid</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Greta\eclipse-workspace\MavenProject\testingRegression.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.LoginTest&quot;/&gt;
+      &lt;class name=&quot;tests.AddIssueTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">Should_BeAbleToLogin_When_UserNameAndPasswordAreValid</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">testingRegression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">Should_BeAbleToLogin_When_UserNameAndPasswordAreValid</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(16);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'Should_BeAbleToAddIssue_When_ProvidingCorrectData')
+data.setCell(0, 2, 'tests.AddIssueTest')
+data.setCell(0, 3, 12464);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'Should_NotBeAbleToAddIssue_When_SeverityLevelIsTooHigh')
+data.setCell(1, 2, 'tests.AddIssueTest')
+data.setCell(1, 3, 2258);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'Should_NotBeAbleToAddIssue_When_AssignedToInvalid')
+data.setCell(2, 2, 'tests.AddIssueTest')
+data.setCell(2, 3, 2197);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'Should_NotBeAbleToAddIssue_When_IssueNameIsEmptyString')
+data.setCell(3, 2, 'tests.AddIssueTest')
+data.setCell(3, 3, 2145);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'Should_NotBeAbleToAddIssue_When_StatusInvalid')
+data.setCell(4, 2, 'tests.AddIssueTest')
+data.setCell(4, 3, 1941);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'Should_NotBeAbleToAddIssue_When_ReasonInvalid')
+data.setCell(5, 2, 'tests.AddIssueTest')
+data.setCell(5, 3, 1616);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'Should_NotBeAbleToAddIssue_When_IssueNameIsMissing')
+data.setCell(6, 2, 'tests.AddIssueTest')
+data.setCell(6, 3, 1614);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'Should_NotBeAbleToLogin_When_PasswordContainsNewLineCharacters')
+data.setCell(7, 2, 'tests.LoginTest')
+data.setCell(7, 3, 1337);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'Should_BeAbleToLogin_When_UserNameAndPasswordAreValid')
+data.setCell(8, 2, 'tests.LoginTest')
+data.setCell(8, 3, 988);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'Should_NotBeAbleToLogin_When_PasswordIsInvalid')
+data.setCell(9, 2, 'tests.LoginTest')
+data.setCell(9, 3, 709);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'Should_NotBeAbleToLogin_When_PasswordContainsScript')
+data.setCell(10, 2, 'tests.LoginTest')
+data.setCell(10, 3, 703);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'Should_NotBeAbleToLogin_When_UserNameIsInvalid')
+data.setCell(11, 2, 'tests.LoginTest')
+data.setCell(11, 3, 691);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'Should_NotBeAbleToLogin_When_PasswordIsCrossSiteScripted')
+data.setCell(12, 2, 'tests.LoginTest')
+data.setCell(12, 3, 670);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'Should_NotBeAbleToLogin_When_PasswordIsEmptyStrings')
+data.setCell(13, 2, 'tests.LoginTest')
+data.setCell(13, 3, 651);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'Should_NotBeAbleToLogin_When_PasswordContainsSymbols')
+data.setCell(14, 2, 'tests.LoginTest')
+data.setCell(14, 3, 634);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'Should_NotBeAbleToLogin_When_PasswordContainsSQL')
+data.setCell(15, 2, 'tests.LoginTest')
+data.setCell(15, 3, 618);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 31 seconds</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">Should_BeAbleToLogin_When_UserNameAndPasswordAreValid</span>
+                <span class="method-start">11115 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Should_NotBeAbleToLogin_When_PasswordContainsNewLineCharacters</span>
+                <span class="method-start">12107 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Should_NotBeAbleToLogin_When_PasswordContainsSQL</span>
+                <span class="method-start">13445 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Should_NotBeAbleToLogin_When_PasswordContainsScript</span>
+                <span class="method-start">14064 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Should_NotBeAbleToLogin_When_PasswordContainsSymbols</span>
+                <span class="method-start">14768 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Should_NotBeAbleToLogin_When_PasswordIsCrossSiteScripted</span>
+                <span class="method-start">15404 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Should_NotBeAbleToLogin_When_PasswordIsEmptyStrings</span>
+                <span class="method-start">16075 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Should_NotBeAbleToLogin_When_PasswordIsInvalid</span>
+                <span class="method-start">16728 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Should_NotBeAbleToLogin_When_UserNameIsInvalid</span>
+                <span class="method-start">17438 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">18132 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.AddIssueTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">19192 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Should_BeAbleToAddIssue_When_ProvidingCorrectData</span>
+                <span class="method-start">29711 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Should_NotBeAbleToAddIssue_When_AssignedToInvalid</span>
+                <span class="method-start">42195 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Should_NotBeAbleToAddIssue_When_IssueNameIsEmptyString</span>
+                <span class="method-start">44393 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Should_NotBeAbleToAddIssue_When_IssueNameIsMissing</span>
+                <span class="method-start">46539 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Should_NotBeAbleToAddIssue_When_ReasonInvalid</span>
+                <span class="method-start">48155 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Should_NotBeAbleToAddIssue_When_SeverityLevelIsTooHigh</span>
+                <span class="method-start">49772 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Should_NotBeAbleToAddIssue_When_StatusInvalid</span>
+                <span class="method-start">52031 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">53973 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

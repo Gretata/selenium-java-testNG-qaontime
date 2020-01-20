@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="16" passed="15" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-01-17T12:57:48 EET" name="Suite" finished-at="2020-01-17T12:58:43 EET" duration-ms="54864">
+    <groups>
+      <group name="testingRegression">
+        <method signature="LoginTest.Should_BeAbleToLogin_When_UserNameAndPasswordAreValid()[pri:0, instance:tests.LoginTest@35cabb2a]" name="Should_BeAbleToLogin_When_UserNameAndPasswordAreValid" class="tests.LoginTest"/>
+      </group> <!-- testingRegression -->
+      <group name="smoke">
+        <method signature="LoginTest.Should_BeAbleToLogin_When_UserNameAndPasswordAreValid()[pri:0, instance:tests.LoginTest@35cabb2a]" name="Should_BeAbleToLogin_When_UserNameAndPasswordAreValid" class="tests.LoginTest"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2020-01-17T12:57:48 EET" name="Test" finished-at="2020-01-17T12:58:43 EET" duration-ms="54864">
+      <class name="tests.LoginTest">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:tests.LoginTest@35cabb2a]" started-at="2020-01-17T12:57:48 EET" name="beforeClass" finished-at="2020-01-17T12:58:00 EET" duration-ms="11096" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="Should_BeAbleToLogin_When_UserNameAndPasswordAreValid()[pri:0, instance:tests.LoginTest@35cabb2a]" started-at="2020-01-17T12:58:00 EET" name="Should_BeAbleToLogin_When_UserNameAndPasswordAreValid" finished-at="2020-01-17T12:58:01 EET" duration-ms="988" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Should_BeAbleToLogin_When_UserNameAndPasswordAreValid -->
+        <test-method signature="Should_NotBeAbleToLogin_When_PasswordContainsNewLineCharacters()[pri:0, instance:tests.LoginTest@35cabb2a]" started-at="2020-01-17T12:58:01 EET" name="Should_NotBeAbleToLogin_When_PasswordContainsNewLineCharacters" finished-at="2020-01-17T12:58:02 EET" duration-ms="1337" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Should_NotBeAbleToLogin_When_PasswordContainsNewLineCharacters -->
+        <test-method signature="Should_NotBeAbleToLogin_When_PasswordContainsSQL()[pri:0, instance:tests.LoginTest@35cabb2a]" started-at="2020-01-17T12:58:02 EET" name="Should_NotBeAbleToLogin_When_PasswordContainsSQL" finished-at="2020-01-17T12:58:02 EET" duration-ms="618" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Should_NotBeAbleToLogin_When_PasswordContainsSQL -->
+        <test-method signature="Should_NotBeAbleToLogin_When_PasswordContainsScript()[pri:0, instance:tests.LoginTest@35cabb2a]" started-at="2020-01-17T12:58:02 EET" name="Should_NotBeAbleToLogin_When_PasswordContainsScript" finished-at="2020-01-17T12:58:03 EET" duration-ms="703" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Should_NotBeAbleToLogin_When_PasswordContainsScript -->
+        <test-method signature="Should_NotBeAbleToLogin_When_PasswordContainsSymbols()[pri:0, instance:tests.LoginTest@35cabb2a]" started-at="2020-01-17T12:58:03 EET" name="Should_NotBeAbleToLogin_When_PasswordContainsSymbols" finished-at="2020-01-17T12:58:04 EET" duration-ms="634" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Should_NotBeAbleToLogin_When_PasswordContainsSymbols -->
+        <test-method signature="Should_NotBeAbleToLogin_When_PasswordIsCrossSiteScripted()[pri:0, instance:tests.LoginTest@35cabb2a]" started-at="2020-01-17T12:58:04 EET" name="Should_NotBeAbleToLogin_When_PasswordIsCrossSiteScripted" finished-at="2020-01-17T12:58:05 EET" duration-ms="670" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Should_NotBeAbleToLogin_When_PasswordIsCrossSiteScripted -->
+        <test-method signature="Should_NotBeAbleToLogin_When_PasswordIsEmptyStrings()[pri:0, instance:tests.LoginTest@35cabb2a]" started-at="2020-01-17T12:58:05 EET" name="Should_NotBeAbleToLogin_When_PasswordIsEmptyStrings" finished-at="2020-01-17T12:58:05 EET" duration-ms="651" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Should_NotBeAbleToLogin_When_PasswordIsEmptyStrings -->
+        <test-method signature="Should_NotBeAbleToLogin_When_PasswordIsInvalid()[pri:0, instance:tests.LoginTest@35cabb2a]" started-at="2020-01-17T12:58:05 EET" name="Should_NotBeAbleToLogin_When_PasswordIsInvalid" finished-at="2020-01-17T12:58:06 EET" duration-ms="709" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Should_NotBeAbleToLogin_When_PasswordIsInvalid -->
+        <test-method signature="Should_NotBeAbleToLogin_When_UserNameIsInvalid()[pri:0, instance:tests.LoginTest@35cabb2a]" started-at="2020-01-17T12:58:06 EET" name="Should_NotBeAbleToLogin_When_UserNameIsInvalid" finished-at="2020-01-17T12:58:07 EET" duration-ms="691" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Should_NotBeAbleToLogin_When_UserNameIsInvalid -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:tests.LoginTest@35cabb2a]" started-at="2020-01-17T12:58:07 EET" name="afterClass" finished-at="2020-01-17T12:58:08 EET" duration-ms="1058" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.AddIssueTest">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:tests.AddIssueTest@7e07db1f]" started-at="2020-01-17T12:58:08 EET" name="beforeClass" finished-at="2020-01-17T12:58:18 EET" duration-ms="10519" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="Should_BeAbleToAddIssue_When_ProvidingCorrectData()[pri:0, instance:tests.AddIssueTest@7e07db1f]" started-at="2020-01-17T12:58:18 EET" name="Should_BeAbleToAddIssue_When_ProvidingCorrectData" finished-at="2020-01-17T12:58:31 EET" duration-ms="12464" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="body"]/table/tbody/tr[2]/td/div/div[2]/table/tbody/tr[2]/td/div[2]"}
+  (Session info: chrome=79.0.3945.117)
+  (Driver info: chromedriver=79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Gretos-Asus', ip: '192.168.237.174', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:62180}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}), userDataDir=C:\Users\Greta\AppData\Local\Temp\scoped_dir12160_1930910790}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=79.0.3945.117, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 9927d41b4b76b05565e5ae7f5ee3c6c6
+*** Element info: {Using=xpath, value=//*[@id="body"]/table/tbody/tr[2]/td/div/div[2]/table/tbody/tr[2]/td/div[2]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="body"]/table/tbody/tr[2]/td/div/div[2]/table/tbody/tr[2]/td/div[2]"}
+  (Session info: chrome=79.0.3945.117)
+  (Driver info: chromedriver=79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Gretos-Asus', ip: '192.168.237.174', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:62180}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}), userDataDir=C:\Users\Greta\AppData\Local\Temp\scoped_dir12160_1930910790}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=79.0.3945.117, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 9927d41b4b76b05565e5ae7f5ee3c6c6
+*** Element info: {Using=xpath, value=//*[@id="body"]/table/tbody/tr[2]/td/div/div[2]/table/tbody/tr[2]/td/div[2]}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy10.getText(Unknown Source)
+at tests.AddIssueTest.Should_BeAbleToAddIssue_When_ProvidingCorrectData(AddIssueTest.java:30)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Should_BeAbleToAddIssue_When_ProvidingCorrectData -->
+        <test-method signature="Should_NotBeAbleToAddIssue_When_AssignedToInvalid()[pri:0, instance:tests.AddIssueTest@7e07db1f]" started-at="2020-01-17T12:58:31 EET" name="Should_NotBeAbleToAddIssue_When_AssignedToInvalid" finished-at="2020-01-17T12:58:33 EET" duration-ms="2197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Should_NotBeAbleToAddIssue_When_AssignedToInvalid -->
+        <test-method signature="Should_NotBeAbleToAddIssue_When_IssueNameIsEmptyString()[pri:0, instance:tests.AddIssueTest@7e07db1f]" started-at="2020-01-17T12:58:33 EET" name="Should_NotBeAbleToAddIssue_When_IssueNameIsEmptyString" finished-at="2020-01-17T12:58:35 EET" duration-ms="2145" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Should_NotBeAbleToAddIssue_When_IssueNameIsEmptyString -->
+        <test-method signature="Should_NotBeAbleToAddIssue_When_IssueNameIsMissing()[pri:0, instance:tests.AddIssueTest@7e07db1f]" started-at="2020-01-17T12:58:35 EET" name="Should_NotBeAbleToAddIssue_When_IssueNameIsMissing" finished-at="2020-01-17T12:58:37 EET" duration-ms="1614" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Should_NotBeAbleToAddIssue_When_IssueNameIsMissing -->
+        <test-method signature="Should_NotBeAbleToAddIssue_When_ReasonInvalid()[pri:0, instance:tests.AddIssueTest@7e07db1f]" started-at="2020-01-17T12:58:37 EET" name="Should_NotBeAbleToAddIssue_When_ReasonInvalid" finished-at="2020-01-17T12:58:38 EET" duration-ms="1616" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Should_NotBeAbleToAddIssue_When_ReasonInvalid -->
+        <test-method signature="Should_NotBeAbleToAddIssue_When_SeverityLevelIsTooHigh()[pri:0, instance:tests.AddIssueTest@7e07db1f]" started-at="2020-01-17T12:58:38 EET" name="Should_NotBeAbleToAddIssue_When_SeverityLevelIsTooHigh" finished-at="2020-01-17T12:58:40 EET" duration-ms="2258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Should_NotBeAbleToAddIssue_When_SeverityLevelIsTooHigh -->
+        <test-method signature="Should_NotBeAbleToAddIssue_When_StatusInvalid()[pri:0, instance:tests.AddIssueTest@7e07db1f]" started-at="2020-01-17T12:58:40 EET" name="Should_NotBeAbleToAddIssue_When_StatusInvalid" finished-at="2020-01-17T12:58:42 EET" duration-ms="1941" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Should_NotBeAbleToAddIssue_When_StatusInvalid -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:tests.AddIssueTest@7e07db1f]" started-at="2020-01-17T12:58:42 EET" name="afterClass" finished-at="2020-01-17T12:58:43 EET" duration-ms="869" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- tests.AddIssueTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
