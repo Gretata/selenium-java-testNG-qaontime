@@ -82,7 +82,7 @@ public class LoginTest {
 	
 	@Test
 	public void Should_NotBeAbleToLogin_When_PasswordContainsSymbols() throws InterruptedException {
-		login.login(util.getUserName(), "*-/%^&**$£");
+		login.login(util.getUserName(), "*-/%^&**$Â£");
 
 		Assert.assertEquals(login.getErrorMessage().getText(), "Incorrect value: Invalid login or password.",
 				"Validation message is missing when a password is invalid");
@@ -98,30 +98,6 @@ public class LoginTest {
 				"Validation message is missing when a password is invalid");
 	}
 	
-///////Sita dali deti prie Login testu
-//
-//@Test
-//public void Should_NotBeABleToLogin_When...
-//List<String> al = util.readLoginPasswords();
-//
-//for (String s : al) {
-//	
-//	System.out.println(s);
-//	login.login(util.getUsername(), s);
-	
-	
-//	
-//	try {
-//		WebElement elementName = driver.findElement(By.className("error"));
-//		
-//		Assert.assertEquals(elementName.getText(), "Incorrect value: Invalid login or password.", 
-//				"not working when pass = " + s);
-//		
-//	} catch (NoSuchElementException) {
-//		false, 	"not working when pass = " + s);
-//		// TODO: handle exception
-//	}
-//}
 //*************************************************************************************************	
 	
 	// logout galima padaryti ir istrinant cookie --> 
