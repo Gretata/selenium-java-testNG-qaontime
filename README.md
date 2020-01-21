@@ -9,13 +9,13 @@ This project was created using Apache Maven as a software project management too
 2. Go to https://maven.apache.org/download.cgi and download Apache Maven. 
 3. Open project folder in Eclipse IDE. 
 4. Create "config.xml" file using valid login information (username and password), as follows:
-<config>
+``<config>
 	<user>
 		<url>http://qaontime.com/register/</url>
 		<userNameXml> valid username </userNameXml>
 		<passwordXml> valid password </passwordXml>
 	</user>
-</config>
+</config>``
 
 5. Go to folder "test-data" and update columns with usernames and passwords that you will use in your tests. 
 6. If you need additional dependencies besides Selenium, testNG and xsls reader, go to file "pom.xml" and add them there. 
